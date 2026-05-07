@@ -24,13 +24,25 @@ That's it. The wizard handles everything else: Obsidian, Homebrew, git, GitHub C
 
 ## Install
 
-Open Terminal and paste:
+**Step 1 — Install Claude Code**
+Download at claude.ai/code → install → open once to confirm it works.
+
+**Step 2 — Download the setup**
+Open Terminal (`Cmd + Space` → "Terminal") and paste:
 
 ```bash
-cd ~/Desktop && curl -L https://github.com/gustavolima-arch/2nd-brain-setup/archive/refs/heads/main.zip -o setup.zip && unzip setup.zip && mv 2nd-brain-setup-main 2nd-brain-setup && rm setup.zip && cd 2nd-brain-setup && claude
+cd ~/Desktop && curl -L https://github.com/gustavolima-arch/2nd-brain-setup/archive/refs/heads/main.zip -o setup.zip && unzip setup.zip && rm setup.zip && rm -rf 2nd-brain-setup && mv 2nd-brain-setup-main 2nd-brain-setup && cd 2nd-brain-setup && claude
 ```
 
-Claude opens, reads the setup instructions, and walks you through the rest — takes about 30 minutes.
+A lot of text will scroll by — that's normal. Wait for it to finish.
+
+**Step 3 — Claude opens automatically**
+If everything went well, Claude opens in the terminal and greets you. It guides the rest of the setup — takes about 30 minutes.
+
+**If Claude didn't open:**
+1. Open Finder → Desktop → enter the `2nd-brain-setup` folder
+2. Right-click inside the folder → "New Terminal at Folder"
+3. Type `claude` and press Enter
 
 ---
 
